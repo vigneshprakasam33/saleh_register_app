@@ -1,0 +1,75 @@
+html{   background-color: beige;
+        background: url(bg1.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+        }
+        #formdiv{
+        top: 40%;
+        left: 43%;
+        width:40em;
+        height:25em;
+        padding-left:2em ;
+        padding-right:2em;
+        padding-bottom:2em;
+        margin-top: -9em; /*set to a negative number 1/2 of your height*/
+        margin-left: -15em; /*set to a negative number 1/2 of your width*/
+        text-align: left;
+        background: rgba(255, 255, 255, 0.45);
+        border-radius: 19px;
+        box-shadow: 0 6px 9px rgba(0, 0, 0, 0.75);
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        position: fixed;
+        z-index: 2;
+       }  
+legend{
+background-color: dimgrey;
+color:white;
+font-weight: bold;
+ padding: .3em 1em;   
+}
+
+
+        a{
+          position:relative; 
+          top:0.2em;
+          color:darkslateblue;
+          text-decoration: none;
+        font-weight: bold;
+        }
+ 
+.login{
+  width: 20em;
+  text-align: right;
+  margin-right: 0.2em;
+  display: block;
+}
+label{
+  width: 20em;
+  font-weight:bold; 
+  float: left;
+  text-align: left;
+  margin-right: 0.2em;
+  display: block;
+} 
+#notice{
+color:#fff;
+font-size:20px;
+font-family: serif sans-serif;
+text-align: center;
+}
+.button{
+text-align: center;
+}
+.submit {
+    border-color: dimgrey;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 20em;  height: 2em;
+}
+        h1 {color:#111;
+            font-size:40px;
+            font-family: serif sans-serif;
+            text-align: center;} 

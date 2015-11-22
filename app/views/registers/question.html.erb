@@ -1,0 +1,28 @@
+<h1>Question Test</h1>
+
+<%= form_for(Register.new , :url => registers_submit_question_path , :method => :post) do |form| %>
+ 
+  <fieldset>
+    <legend> Security Question </legend>
+   	
+   	<%
+   	case @question
+   	when 0
+   		@q="What the name of your best childhood ? "
+   	when 1
+   		@q="What is your favorit color?"
+   	else 2
+   		@q="What was the name of your first pet?"
+   	end
+   	%>
+
+    <%=@q%>
+    <%= form.hidden_field :question_id , :value => @question %>
+   	<%=form.text_field :answer%>
+
+    <br/>
+
+    <%= submit_tag "submit", :class => "submit" %>
+   </div>
+  </fieldset>
+<% end %>

@@ -1,0 +1,22 @@
+<h1>Login</h1>
+
+<%= form_for :register do |form| %>
+<fieldset>
+  <legend>Enter Your Login Information</legend>
+ 	<br />
+    <label class="login" for="username">Username:</label>
+    <%= form.text_field :username %>
+
+    <label class="login" for="password">Password:</label>
+    <%= form.password_field :password %>
+ 	<br/>
+ 	<br/>
+    <div class="button">
+    <%= submit_tag "Login!", :class => "submit" %>
+	</div>
+</fieldset>
+<% end %>
+ 		<br /><br />
+       <p>
+            Not a member?  <%= link_to "Register now!",  :action => "signup" %>
+      </p>
